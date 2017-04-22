@@ -19,13 +19,18 @@ a {
   text-decoration: inherit;
 }
 
+code.highlighter-rouge {
+    background: #131212;
+    padding: 2px 4px;
+    border: 1px solid #353535;
+}
 
 span.title {
     font-weight: bold;
     font-size: x-large;
 }
 
-span.date {
+span.subscript {
     font-size: small;
     color: gray;
 }

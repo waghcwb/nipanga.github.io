@@ -14,28 +14,56 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
+# Website
 title: "git-gud.sh"
 description: ""
-
+baseurl: ""
+url: "https://nipanga.github.io"
 email: "jotafelipe@gmail.com"
 
-baseurl: ""
-url: "https://nipanga.github.io/"
 
+# Third PParty Services
 twitter_username: realnipanga
 github_username:  nipanga
-
 google_analytics: UA-97046781-1
 
+# Pagination Settings
 paginate: 15
 paginate_path: "page/:num/"
 
-# Build settings
+# Comments Settings - Disqus
+disqus_short_name: "nipanga-github-io"
+disqus_url: "https://nipanga-github-io.disqus.com"
+
+# Authors Info
+authors:
+    nipanga:
+        name: Juliano A. Felipe
+        url: https://twitter.com/realnipanga
+
+        
+# Build Settings
 markdown: kramdown
 theme: jekyll-theme-hacker
+
+# Kramdown Code Block Syntax Highlighting
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+    span:
+      line_numbers: false
+      disable: false
+    block:
+      line_numbers: true
+      start_line: 1
+    
+# Gems
 gems:
   - jekyll-feed
   - jekyll-paginate
 exclude:
   - Gemfile
   - Gemfile.lock
+
